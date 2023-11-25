@@ -15,8 +15,10 @@ function imageCard(imgUrl) {
 }
 
 
-export function home() {
-    const element = document.createElement('div');
-    element.appendChild(imageCard(Outside));
-    return element;
+export function createHome() {
+    const home = document.createElement('div');
+    home.classList.add('page-content');
+    home.appendChild(imageCard(Outside));
+    const contentDiv = document.getElementById('content');
+    contentDiv.appendChild(home);
 }

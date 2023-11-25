@@ -1,4 +1,36 @@
+:root {
+    --eggplant: #443742ff;
+    --tomato: #f95738ff;
+    --thistle: #e2cfeaff;
+    --ecru: #d7b377ff;
+    --bittersweet: #fe5f55ff;
+}
+
+body {
+    background-color: var(--thistle);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
 img {
     width: 300px;
     height: auto;
+}
+
+.navbar {
+    background-color: var(--eggplant);
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.navbar div {
+    justify-self: end;
 }
