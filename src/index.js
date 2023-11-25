@@ -35,3 +35,4 @@ function createNavbar() {
 }
 
 createNavbar();
+createHome();
