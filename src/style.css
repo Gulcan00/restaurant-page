@@ -46,7 +46,10 @@ img {
 }
 
 .page-content {
-    padding: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .img-card {
@@ -59,6 +62,7 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    padding-left: 30px;
 }
 
 .logo {

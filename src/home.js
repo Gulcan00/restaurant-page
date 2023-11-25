@@ -27,6 +27,12 @@ export function createHome() {
 
     home.appendChild(imagesContainer);
 
+    const homepageCopy = document.createElement('div');
+    homepageCopy.style.setProperty('background-color', `var(--ecru)`);
+    homepageCopy.style.textAlign = 'center';
+    homepageCopy.innerText = 'Bla bla come and enjoy this amazing res...';
+    home.appendChild(homepageCopy);
+
     const contentDiv = document.getElementById('content');
     contentDiv.appendChild(home);
 }
