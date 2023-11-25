@@ -12,6 +12,7 @@ body {
     margin: 0;
     width: 100%;
     min-height: 100vh;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 img {
@@ -28,10 +29,20 @@ img {
     align-items: center;
     padding: 0 15px;
     box-sizing: border-box;
+    color: white;
 }
 
 .navbar div {
     justify-self: end;
+}
+
+.navbar>div>button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background-color: var(--bittersweet);
+    padding: 4px;
+    font-family: inherit;
 }
 
 .page-content {
@@ -52,6 +63,5 @@ img {
 
 .logo {
     font-family: 'Dancing Script';
-    color: white;
     font-size: 36px;
 }
