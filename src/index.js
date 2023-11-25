@@ -6,6 +6,7 @@ function createNavbar() {
     navbar.classList.add('navbar');
 
     const logo = document.createElement('h2');
+    logo.classList.add('logo')
     logo.innerText = 'La Ratatouille';
     navbar.appendChild(logo);
 
