@@ -43,6 +43,7 @@ img {
     background-color: var(--bittersweet);
     padding: 4px;
     font-family: inherit;
+    cursor: pointer;
 }
 
 .page-content {
