@@ -57,13 +57,14 @@ img {
     background-color: white;
     padding: 8px;
     padding-bottom: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .images-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
-    padding-left: 30px;
+    gap: 30px;
+    padding: 50px 0px;
 }
 
 .logo {
@@ -75,4 +76,5 @@ img {
     align-self: stretch;
     text-align: center;
     background-color: var(--ecru);
+    padding: 20px 0px;
 }

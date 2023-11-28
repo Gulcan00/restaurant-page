@@ -29,7 +29,18 @@ export function createHome() {
 
     const homepageCopy = document.createElement('div');
     homepageCopy.classList.add('textContent');
-    homepageCopy.innerText = 'Bla bla come and enjoy this amazing res...';
+    const text = document.createElement('p');
+    text.style.maxWidth = '75ch';
+    text.style.margin = 'auto';
+    text.innerText =   `La Ratatouille: A Taste of Paris in the Heart of the City
+
+    Embark on a culinary journey at La Ratatouille, a charming bistro nestled in the heart of Paris. Our restaurant is a testament to the belief that anyone can cook, and we strive to bring this philosophy to life with every dish we serve.
+
+    Our menu, meticulously crafted by our very own Little Chef, Remy, is a tribute to the timeless traditions of French gastronomy. From the classic Ratatouille to the indulgent Crème Brûlée, each dish is a celebration of flavor, made with love and the freshest ingredients.
+    
+    At La Ratatouille, we're not just serving meals, we're creating memories. So come, join us for an unforgettable dining experience. Bon Appétit!
+    `;
+    homepageCopy.appendChild(text);
     home.appendChild(homepageCopy);
 
     const contentDiv = document.getElementById('content');
