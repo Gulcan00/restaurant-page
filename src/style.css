@@ -78,3 +78,10 @@ img {
     background-color: var(--ecru);
     padding: 20px 0px;
 }
+
+.profile-pic {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 4px solid var(--tomato);
+}
