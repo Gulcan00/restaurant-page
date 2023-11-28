@@ -49,6 +49,7 @@ img {
     padding-top: 20px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 20px;
 }
 
@@ -68,4 +69,10 @@ img {
 .logo {
     font-family: 'Dancing Script';
     font-size: 36px;
+}
+
+.textContent {
+    align-self: stretch;
+    text-align: center;
+    background-color: var(--ecru);
 }
