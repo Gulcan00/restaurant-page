@@ -74,7 +74,7 @@ img {
     font-size: 36px;
 }
 
-.textContainer {
+.text-container {
     align-self: stretch;
     text-align: center;
     background-color: var(--ecru);
@@ -93,4 +93,11 @@ img {
     height: 100px;
     width: 100px;
     border: 4px solid var(--tomato);
+    grid-row: 1 / span 2;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    column-gap: 8px;
 }

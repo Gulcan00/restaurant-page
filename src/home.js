@@ -18,18 +18,32 @@ function imageCard(imgUrl, altText) {
 
 function createReviewSection() {
     const review = document.createElement('div');
+    review.style.maxWidth = '75ch';
+    review.style.marginBottom = '16px';
+    review.classList.add('text');
+
+    const profileContainer = document.createElement('div');
+    profileContainer.classList.add('profile-container');
+
     const profilePic = document.createElement('img');
     profilePic.src = AntonEgo;
     profilePic.alt = 'An image of food critic Anton Ego';
     profilePic.classList.add('profile-pic');
+    profileContainer.appendChild(profilePic);
+
     const criticName = document.createElement('p');
+    criticName.style.fontWeight = '600';
+    criticName.style.margin = '0px';
+    criticName.style.alignSelf = 'end';
     criticName.innerText = 'Anton Ego';
-    review.appendChild(criticName);
+    profileContainer.appendChild(criticName);
+
     const jobTitle = document.createElement('p');
     jobTitle.innerText = 'Food Critic';
-    review.appendChild(jobTitle);
+    jobTitle.style.marginTop = '4px';
+    profileContainer.appendChild(jobTitle);
 
-    review.appendChild(profilePic);
+    review.appendChild(profileContainer);
 
     const reviewText = document.createElement('p');
     reviewText.innerText = "In the realm of culinary arts, La Ratatouille stands as a testament to the extraordinary. The Little Chef, Remy, has breathed new life into traditional French cuisine, creating dishes that are both familiar and innovative. The ambiance, reminiscent of a cozy Parisian café, adds to the charm. Despite initial reservations, I found myself captivated by the magic that is La Ratatouille.";
@@ -51,7 +65,7 @@ export function createHome() {
     home.appendChild(imagesContainer);
 
     const homepageCopy = document.createElement('div');
-    homepageCopy.classList.add('textContainer');
+    homepageCopy.classList.add('text-container');
     const text = document.createElement('p');
     text.classList.add('text');
     text.style.maxWidth = '75ch';
