@@ -51,8 +51,9 @@ export function createHome() {
     home.appendChild(imagesContainer);
 
     const homepageCopy = document.createElement('div');
-    homepageCopy.classList.add('textContent');
+    homepageCopy.classList.add('textContainer');
     const text = document.createElement('p');
+    text.classList.add('text');
     text.style.maxWidth = '75ch';
     text.style.margin = 'auto';
     text.innerText =   `La Ratatouille: A Taste of Paris in the Heart of the City
