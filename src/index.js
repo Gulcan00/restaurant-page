@@ -5,11 +5,6 @@ function createNavbar() {
     const navbar = document.createElement('nav');
     navbar.classList.add('navbar');
 
-    const logo = document.createElement('h2');
-    logo.classList.add('logo')
-    logo.innerText = 'La Ratatouille';
-    navbar.appendChild(logo);
-
     const navDiv = document.createElement('div');
     //Home
     const homeBtn = document.createElement('button');
@@ -29,6 +24,17 @@ function createNavbar() {
          contentDiv.removeChild(pageContent);
          //contentDiv.appendChild(createMenu());
      })
+     navDiv.appendChild(menuBtn);
+
+     //About
+     const aboutBtn = document.createElement('button');
+     aboutBtn.innerText = 'About';
+     aboutBtn.addEventListener('click', () => {
+         const pageContent = document.querySelector('div.page-content');
+         contentDiv.removeChild(pageContent);
+         //contentDiv.appendChild(createMenu());
+     })
+     navDiv.appendChild(aboutBtn);
 
      navbar.appendChild(navDiv);
 

@@ -24,27 +24,38 @@ img {
 .navbar {
     background-color: var(--eggplant);
     position: sticky;
+    top: 0;
+    z-index: 10;
     width: 100%;
-    display: grid;
-    grid-template: 60px / 1fr 1fr;
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 0 15px;
+    padding: 10px 15px;
     box-sizing: border-box;
     color: white;
 }
 
-.navbar div {
-    justify-self: end;
+.navbar>div {
+    display: flex;
+    gap: 20px;
 }
 
 .navbar>div>button {
     appearance: none;
     border: none;
     outline: none;
-    background-color: var(--bittersweet);
-    padding: 4px;
+    background-color: transparent;
     font-family: inherit;
     cursor: pointer;
+    text-transform: uppercase;
+    color: inherit;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.navbar>div>button:hover {
+    color: var(--bittersweet);
 }
 
 .page-content {
@@ -67,16 +78,19 @@ img {
     flex-wrap: wrap;
     gap: 30px;
     padding: 50px 0px;
+    position: relative;
 }
 
 .logo {
     font-family: 'Dancing Script';
-    font-size: 36px;
+    font-size: 60px;
+    position: absolute;
+    top: -40px;
+    rotate: -8deg;
 }
 
 .text-container {
     align-self: stretch;
-    text-align: center;
     background-color: var(--ecru);
     padding: 40px 0px;
 }

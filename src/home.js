@@ -59,10 +59,29 @@ export function createHome() {
 
     const imagesContainer = document.createElement('div');
     imagesContainer.classList.add('images-container');
+
+    const logo = document.createElement('h2');
+    logo.classList.add('logo')
+    logo.innerText = 'La Ratatouille';
+    imagesContainer.appendChild(logo);
+
     imagesContainer.appendChild(imageCard(Outside, 'Photo of the front of La Ratatouille'));
     imagesContainer.appendChild(imageCard(Inside1, 'Photo of inside of La Ratatouille'));
 
+    const headline = document.createElement('p');
+    headline.innerText = 'Food that tells a story...';
+    headline.style.position = 'absolute';
+    headline.style.bottom = '0';
+    headline.style.width = 'max-content'; // adjust this as needed
+    headline.style.left = '0';
+    headline.style.right = '0';
+    headline.style.margin = 'auto';
+    headline.style.fontSize = '22px';
+    imagesContainer.appendChild(headline);
+
     home.appendChild(imagesContainer);
+
+
 
     const homepageCopy = document.createElement('div');
     homepageCopy.classList.add('text-container');
@@ -70,9 +89,7 @@ export function createHome() {
     text.classList.add('text');
     text.style.maxWidth = '75ch';
     text.style.margin = 'auto';
-    text.innerText =   `La Ratatouille: A Taste of Paris in the Heart of the City
-
-    Embark on a culinary journey at La Ratatouille, a charming bistro nestled in the heart of Paris. Our restaurant is a testament to the belief that anyone can cook, and we strive to bring this philosophy to life with every dish we serve.
+    text.innerText =   `Embark on a culinary journey at La Ratatouille, a charming bistro nestled in the heart of Paris. Our restaurant is a testament to the belief that anyone can cook, and we strive to bring this philosophy to life with every dish we serve.
 
     Our menu, meticulously crafted by our very own Little Chef, Remy, is a tribute to the timeless traditions of French gastronomy. From the classic Ratatouille to the indulgent Crème Brûlée, each dish is a celebration of flavor, made with love and the freshest ingredients.
     
