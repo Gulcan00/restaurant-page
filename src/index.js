@@ -1,3 +1,4 @@
+import createAbout from "./about";
 import { createHome } from "./home";
 import { createMenu } from "./menu";
 
@@ -17,29 +18,29 @@ function createNavbar() {
     })
     navDiv.appendChild(homeBtn);
 
-     //Menu
-     const menuBtn = document.createElement('button');
-     menuBtn.innerText = 'Menu';
-     menuBtn.addEventListener('click', () => {
-         const pageContent = document.querySelector('div.page-content');
-         contentDiv.removeChild(pageContent);
+    //Menu
+    const menuBtn = document.createElement('button');
+    menuBtn.innerText = 'Menu';
+    menuBtn.addEventListener('click', () => {
+        const pageContent = document.querySelector('div.page-content');
+        contentDiv.removeChild(pageContent);
         createMenu();
-     })
-     navDiv.appendChild(menuBtn);
+    })
+    navDiv.appendChild(menuBtn);
 
-     //About
-     const aboutBtn = document.createElement('button');
-     aboutBtn.innerText = 'About';
-     aboutBtn.addEventListener('click', () => {
-         const pageContent = document.querySelector('div.page-content');
-         contentDiv.removeChild(pageContent);
-         //contentDiv.appendChild(createMenu());
-     })
-     navDiv.appendChild(aboutBtn);
+    //About
+    const aboutBtn = document.createElement('button');
+    aboutBtn.innerText = 'About';
+    aboutBtn.addEventListener('click', () => {
+        const pageContent = document.querySelector('div.page-content');
+        contentDiv.removeChild(pageContent);
+        createAbout();
+    })
+    navDiv.appendChild(aboutBtn);
 
-     navbar.appendChild(navDiv);
+    navbar.appendChild(navDiv);
 
-     contentDiv.appendChild(navbar);
+    contentDiv.appendChild(navbar);
 }
 
 createNavbar();
