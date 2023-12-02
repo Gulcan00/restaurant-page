@@ -115,3 +115,33 @@ img {
     grid-template-columns: min-content 1fr;
     column-gap: 8px;
 }
+
+.food-section-title {
+    font-size: 24px;
+    text-decoration: underline;
+    text-decoration-color: var(--bittersweet);
+}
+
+.food-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0px 80px;
+}
+
+.food-section li {
+    list-style: none;
+    margin-bottom: 8px;
+    margin-left: 16px;
+}
+
+.food-section li::marker {
+    color: var(--tomato);
+    content: '➳';
+    font-size: 20px;
+}
+
+.menu-image img {
+    width: 200px;
+    height: auto;
+}

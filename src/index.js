@@ -1,4 +1,5 @@
 import { createHome } from "./home";
+import { createMenu } from "./menu";
 
 function createNavbar() {
     const contentDiv = document.getElementById('content');
@@ -12,7 +13,7 @@ function createNavbar() {
     homeBtn.addEventListener('click', () => {
         const pageContent = document.querySelector('div.page-content');
         contentDiv.removeChild(pageContent);
-        contentDiv.appendChild(createHome());
+        createHome();
     })
     navDiv.appendChild(homeBtn);
 
@@ -22,7 +23,7 @@ function createNavbar() {
      menuBtn.addEventListener('click', () => {
          const pageContent = document.querySelector('div.page-content');
          contentDiv.removeChild(pageContent);
-         //contentDiv.appendChild(createMenu());
+        createMenu();
      })
      navDiv.appendChild(menuBtn);
 

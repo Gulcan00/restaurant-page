@@ -3,7 +3,7 @@ import Inside1 from './images/inside1.jpg';
 import AntonEgo from './images/Ego.jpg';
 import './style.css'
 
-function imageCard(imgUrl, altText) {
+export function imageCard(imgUrl, altText) {
     const card = document.createElement('div');
     card.classList.add('img-card');
 
