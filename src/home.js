@@ -17,9 +17,15 @@ export function imageCard(imgUrl, altText) {
 }
 
 function createReviewSection() {
+    const reviewContainer = document.createElement('div');
+    reviewContainer.style.backgroundColor = 'var(--tomato)';
+    reviewContainer.style.width = '100%';
+    reviewContainer.style.padding = '20px 0px';
+    reviewContainer.style.display = 'flex';
+    reviewContainer.style.justifyContent = 'center';
     const review = document.createElement('div');
     review.style.maxWidth = '75ch';
-    review.style.marginBottom = '16px';
+    review.style.margin = '16px 0px';
     review.classList.add('text');
 
     const profileContainer = document.createElement('div');
@@ -49,7 +55,8 @@ function createReviewSection() {
     reviewText.innerText = "In the realm of culinary arts, La Ratatouille stands as a testament to the extraordinary. The Little Chef, Remy, has breathed new life into traditional French cuisine, creating dishes that are both familiar and innovative. The ambiance, reminiscent of a cozy Parisian café, adds to the charm. Despite initial reservations, I found myself captivated by the magic that is La Ratatouille.";
 
     review.appendChild(reviewText);
-    return review;
+    reviewContainer.appendChild(review);
+    return reviewContainer;
 }
 
 
@@ -71,7 +78,7 @@ export function createHome() {
     const headline = document.createElement('p');
     headline.innerText = 'Food that tells a story...';
     headline.style.position = 'absolute';
-    headline.style.bottom = '0';
+    headline.style.bottom = '10px';
     headline.style.width = 'max-content'; // adjust this as needed
     headline.style.left = '0';
     headline.style.right = '0';
