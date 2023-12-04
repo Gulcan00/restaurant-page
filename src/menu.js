@@ -1,9 +1,15 @@
-import { imageCard } from './home';
 import FrenchSoup from './images/french-soup.png';
+import Ratatouille from './images/ratatouille.png';
+import TartTatin from './images/tart-tatin.png';
+import WineCheese from './images/wine-cheese.png';
 
 export function createMenu() {
     const menu = document.createElement('div');
     menu.classList.add('page-content');
+    menu.style.background = `url(${FrenchSoup}) top left / 50% 50% no-repeat, 
+    url(${Ratatouille}) no-repeat top right / 50% 50%, 
+    url(${TartTatin}) no-repeat bottom left / 50% 50%, 
+    url(${WineCheese}) no-repeat bottom right / 50% 50%`;
     const mainContent = document.createElement('div');
     mainContent.style.backgroundColor = '#fff';
     mainContent.style.padding = '0px 80px';
@@ -85,14 +91,6 @@ export function createMenu() {
     mainContent.appendChild(dessertContainer);
     mainContent.appendChild(drinksContainer);
     menu.appendChild(mainContent);
-
-    const frenchSoup = imageCard(FrenchSoup, 'Photo of French Onion Soup');
-    frenchSoup.classList.add('menu-image');
-    frenchSoup.style.position = 'absolute';
-    frenchSoup.style.top = '100px';
-    frenchSoup.style.right = '80px';
-
-    menu.appendChild(frenchSoup);
 
     const contentDiv = document.getElementById('content');
     contentDiv.appendChild(menu);
